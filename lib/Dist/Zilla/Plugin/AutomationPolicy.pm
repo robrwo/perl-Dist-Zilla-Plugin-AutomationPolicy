@@ -17,7 +17,7 @@ use namespace::autoclean;
 
 use experimental qw( postderef signatures );
 
-our $VERSION = 'v0.0.1';
+our $VERSION = 'v0.0.2';
 
 has version => (
     is      => 'ro',
@@ -67,8 +67,8 @@ sub gather_files($self) {
 
     $self->add_file(
         Dist::Zilla::File::InMemory->new(
-            name    => $self->filename,
-            content => $self->to_json,
+            name            => $self->filename,
+            encoded_content => $self->to_json,
         )
     );
 

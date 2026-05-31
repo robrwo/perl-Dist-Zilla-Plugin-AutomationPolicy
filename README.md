@@ -2,6 +2,27 @@
 
 Dist::Zilla::Plugin::AutomationPolicy - add an automation policy to a distribution
 
+# SYNOPSIS
+
+In the `dist.ini`:
+
+```
+[AutomationPolicy]
+-version    = v0.2.2
+description = The automation policy for Foo-Bar-Baz
+template    = human_supervised
+models      = claude-opus-4-7
+models      = claude-opus-4-8
+```
+
+# DESCRIPTION
+
+This plugin will create a machine-readable `CPAN-META/automation-policy.json` file in your distribution, using
+[Dist::AutomationPolicy](https://metacpan.org/pod/Dist%3A%3AAutomationPolicy).
+
+It allows authors to specify the use of automation in generating their modules, and what automated contributions they
+will accept.
+
 # REQUIREMENTS
 
 This module lists the following modules as runtime dependencies:
@@ -56,12 +77,21 @@ For more information, see [How to install CPAN modules](https://www.cpan.org/mod
 
 # SUPPORT
 
+Only the latest version of this module will be supported.
+
+This module requires Perl v5.24 or later, based on the minimum Perl supported by [Dist::Zilla](https://metacpan.org/pod/Dist%3A%3AZilla).
+
+## Reporting Bugs and Submitting Feature Requests
+
 Please report any bugs or feature requests on the bugtracker website
 [https://github.com/robrwo/perl-Dist-Zilla-Plugin-AutomationPolicy/issues](https://github.com/robrwo/perl-Dist-Zilla-Plugin-AutomationPolicy/issues)
 
 When submitting a bug or request, please include a test-file or a
 patch to an existing test-file that illustrates the bug or desired
 feature.
+
+If the bug you are reporting has security implications which make it inappropriate to send to a public issue tracker,
+then see `SECURITY.md` for instructions how to report security vulnerabilities.
 
 # SOURCE
 

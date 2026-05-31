@@ -17,7 +17,7 @@ use namespace::autoclean;
 
 use experimental qw( postderef signatures );
 
-our $VERSION = 'v0.0.2';
+our $VERSION = 'v0.1.0';
 
 has version => (
     is      => 'ro',
@@ -67,6 +67,10 @@ around plugin_from_config => sub( $orig, $class, $name, $args, $section ) {
     return $class->$orig( $name, \%module_args, $section );
 };
 
+=for Pod::Coverage gather_files
+
+=cut
+
 sub gather_files($self) {
 
     $self->add_file(
@@ -79,10 +83,18 @@ sub gather_files($self) {
     return;
 }
 
+=for Pod::Coverage register_prereqs
+
+=cut
+
 sub register_prereqs($self) {
     $self->zilla->register_prereqs( { phase => 'develop' }, "Dist::AutomationPolicy" => $self->version );
     return;
 }
+
+=for Pod::Coverage prune_files
+
+=cut
 
 sub prune_files($self) {
     my @files    = @{ $self->zilla->files };

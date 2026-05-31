@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Bug Fixes]
   - Specified the minimum version of Dist::AutomationPolicy.
 
+  [Documentation]
+  - Link to the Metadata v3 Automation Policy Specification.
+
   [Toolchain]
   - Included automation-policy.json in the distribution.
 

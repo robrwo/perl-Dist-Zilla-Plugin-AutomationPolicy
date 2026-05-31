@@ -225,6 +225,10 @@ sub prune_files($self) {
 
 __PACKAGE__->meta->make_immutable;
 
+=head1 SEE ALSO
+
+L<Metadata v3 Automation Policy|https://github.com/CPAN-Security/cpan-metadata-v3/blob/main/automation-policy.md>
+
 =head1 prepend:SUPPORT
 
 Only the latest version of this module will be supported.

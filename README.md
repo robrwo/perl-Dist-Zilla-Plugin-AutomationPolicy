@@ -29,6 +29,8 @@ Changes for version v0.1.1 (2026-05-31)
 
 - Bug Fixes
     - Specified the minimum version of Dist::AutomationPolicy.
+- Documentation
+    - Link to the Metadata v3 Automation Policy Specification.
 - Toolchain
     - Included automation-policy.json in the distribution.
 
@@ -126,3 +128,7 @@ This is free software, licensed under:
 ```
 The Artistic License 2.0 (GPL Compatible)
 ```
+
+# SEE ALSO
+
+[Metadata v3 Automation Policy](https://github.com/CPAN-Security/cpan-metadata-v3/blob/main/automation-policy.md)

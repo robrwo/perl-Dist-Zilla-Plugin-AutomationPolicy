@@ -58,8 +58,6 @@ around plugin_from_config => sub( $orig, $class, $name, $args, $section ) {
         }
     }
 
-    $module_args{filename} = $module_args{_policy_args}{filename} if $module_args{_policy_args}{filename};
-
     return $class->$orig( $name, \%module_args, $section );
 };
 

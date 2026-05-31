@@ -23,6 +23,15 @@ This plugin will create a machine-readable `CPAN-META/automation-policy.json` fi
 It allows authors to specify the use of automation in generating their modules, and what automated contributions they
 will accept.
 
+# RECENT CHANGES
+
+Changes for version v0.1.1 (2026-05-31)
+
+- Toolchain
+    - Included automation-policy.json in the distribution.
+
+See the `Changes` file for more details.
+
 # REQUIREMENTS
 
 This module lists the following modules as runtime dependencies:

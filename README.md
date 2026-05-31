@@ -27,6 +27,8 @@ will accept.
 
 Changes for version v0.1.1 (2026-05-31)
 
+- Bug Fixes
+    - Specified the minimum version of Dist::AutomationPolicy.
 - Toolchain
     - Included automation-policy.json in the distribution.
 
@@ -36,7 +38,7 @@ See the `Changes` file for more details.
 
 This module lists the following modules as runtime dependencies:
 
-- [Dist::AutomationPolicy](https://metacpan.org/pod/Dist%3A%3AAutomationPolicy)
+- [Dist::AutomationPolicy](https://metacpan.org/pod/Dist%3A%3AAutomationPolicy) version v0.2.0 or later
 - [Dist::Zilla::File::InMemory](https://metacpan.org/pod/Dist%3A%3AZilla%3A%3AFile%3A%3AInMemory)
 - [Dist::Zilla::Pragmas](https://metacpan.org/pod/Dist%3A%3AZilla%3A%3APragmas)
 - [Dist::Zilla::Role::FileGatherer](https://metacpan.org/pod/Dist%3A%3AZilla%3A%3ARole%3A%3AFileGatherer)

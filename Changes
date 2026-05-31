@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Specified the minimum version of Dist::AutomationPolicy.
+
   [Toolchain]
   - Included automation-policy.json in the distribution.
 

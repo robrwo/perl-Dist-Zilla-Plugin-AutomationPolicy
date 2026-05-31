@@ -7,7 +7,7 @@ use v5.24;
 use Moose;
 with qw( Dist::Zilla::Role::FileGatherer Dist::Zilla::Role::PrereqSource Dist::Zilla::Role::FilePruner );
 
-use Dist::AutomationPolicy;
+use Dist::AutomationPolicy v0.2.0;
 use Dist::Zilla::File::InMemory;
 use Dist::Zilla::Pragmas;
 use MooseX::Types::Moose qw( HashRef );

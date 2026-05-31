@@ -21,6 +21,7 @@ my $tzil = Builder->from_config(
                         description => 'Test for Dist-Zilla-Plugin-AutomationPolicy',
                         document => 'AI_POLICY.md',
                         template => 'human_supervised',
+                        models   => [qw( claude-opus-4-7 claude-opus-4-8 )],
                     }
                 ],
             ),
@@ -59,6 +60,7 @@ is_deeply $data,
     "description"             => 'Test for Dist-Zilla-Plugin-AutomationPolicy',
     "distribution"            => "DZT-Sample-0.001",
     "document"                => "AI_POLICY.md",
+    "models"                  => [qw( claude-opus-4-7 claude-opus-4-8 )],
     "version"                 => 1
   },
   "expected data";

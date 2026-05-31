@@ -45,6 +45,12 @@ sub _build_policy ($self) {
     return Dist::AutomationPolicy->new(%args);
 }
 
+=for Pod::Coverage mvp_multivalue_args
+
+=cut
+
+sub mvp_multivalue_args { qw( models ) }
+
 around plugin_from_config => sub( $orig, $class, $name, $args, $section ) {
     my %module_args;
 
